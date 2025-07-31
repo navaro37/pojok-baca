@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pojok Baca Gizi Sehat</title>
+  <style>
+  
+  @keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(-45deg, #f8f9fa, #e0f7fa, #b2ebf2, #80deea);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  color: #333;
+}
+
+/* Agar paragraf di home dan about jadi rata kanan */
+#home p,
+#about p {
+  text-align: justify;
+  line-height: 1.8;
+}
+
+
+  
+
+    body {
+	
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #f8f9fa, #e0f7fa);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(90deg, #00b894, #00cec9);
+      color: white;
+	  
+      padding: 2rem 1rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    header h2 {
+      margin: 0.3rem 0;
+      font-weight: 500;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+
+    nav {
+      background-color: #ffffffcc;
+      text-align: center;
+      padding: 0.8rem 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #00796b;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #004d40;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    #home, #about, #books {
+      margin-bottom: 3rem;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .book-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .book-card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 1rem;
+      width: 250px;
+      box-shadow: 0 4px 10px rgba(0, 150, 136, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .book-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 150, 136, 0.2);
+    }
+
+    .book-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .book-title {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-top: 0.6rem;
+      color: #00695c;
+    }
+
+    .book-author {
+      font-size: 0.9rem;
+      color: #616161;
+    }
+
+    .book-desc {
+      margin: 0.5rem 0;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .book-button {
+      display: inline-block;
+      background: linear-gradient(90deg, #00b894, #00cec9);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      text-align: center;
+      transition: background 0.3s;
+    }
+
+    .book-button:hover {
+      background: linear-gradient(90deg, #009688, #26a69a);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #eeeeee;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+	
+	
+  </style>
+</head>
+<body>
+
+<!-- Logo KKNT dan UNDIP di pojok kanan atas -->
+<div style="position: absolute; top: 10px; right: 10px; display: flex; gap: 10px;">
+  <img src="logo_kknt.png" alt="Logo KKNT" style="height: 50px;" />
+  <img src="logo_undip.png" alt="Logo UNDIP" style="height: 50px;" />
+</div>
+
+  <header>
+    <h1>Pojok Baca Gizi Sehat</h1>
+    <h2>KKNT IDBU 82 MIJEN</h2>
+    <p>Edukasi Stunting dan Pangan Lokal untuk Keluarga Sehat</p>
+  </header>
+
+  <nav>
+    <a href="#home">Beranda</a>
+    <a href="#about">Tentang</a>
+    <a href="#books">Daftar Buku</a>
+  </nav>
+
+  <section id="home">
+    <h2>Beranda</h2>
+    <p>
+      Selamat datang di <strong>Pojok Baca Gizi Sehat</strong> – sebuah inisiatif dari KKNT IDBU 82 MIJEN yang bertujuan memberikan edukasi kepada masyarakat tentang pentingnya pencegahan stunting dan pemanfaatan pangan lokal untuk meningkatkan kesehatan keluarga. 
+      Melalui berbagai sumber bacaan digital, kami berharap masyarakat semakin sadar akan pentingnya gizi dan pola hidup sehat. Di era digital saat ini, kemudahan akses terhadap informasi dan literasi menjadi hal yang sangat penting. Masyarakat modern tidak hanya membutuhkan tempat membaca, tetapi juga ruang belajar yang fleksibel, cepat, dan terjangkau. Menjawab tantangan tersebut, Pojok Baca Digital hadir sebagai solusi inovatif di tengah masyarakat Kelurahan Mijen.
+	  Pojok Baca Digital adalah platform literasi berbasis web yang bertujuan untuk memperluas akses membaca bagi seluruh lapisan masyarakat, terutama di wilayah yang belum memiliki perpustakaan fisik. Kami menyediakan berbagai macam bacaan elektronik, mulai dari buku anak, cerita rakyat, hingga buku-buku kesehatan dan gizi, yang dapat diakses kapan saja dan di mana saja.
+	  Melalui website ini, masyarakat tidak hanya bisa membaca buku secara daring, tetapi juga mendapatkan informasi edukatif seputar gizi sehat, pola hidup bersih, dan wawasan lainnya yang mendukung peningkatan kualitas hidup.
+	  Kami percaya bahwa literasi adalah pondasi utama dalam membangun generasi yang cerdas, mandiri, dan berdaya saing. Dengan membaca, kita membuka jendela dunia. Dengan Pojok Baca Digital, kita membuka peluang untuk belajar dan berkembang bersama.
+	  Mari manfaatkan fasilitas ini sebaik-baiknya. Ayo tumbuhkan budaya baca dari rumah, dari sekolah, dari mana saja — dimulai dari Mijen!
+    </p>
+  </section>
+
+  <section id="about">
+    <h2>Tentang</h2>
+    <p>
+      Pojok Baca Digital adalah sebuah program pemberdayaan literasi masyarakat berbasis teknologi yang diinisiasi oleh mahasiswa Kuliah Kerja Nyata (KKN) Universitas Diponegoro bekerja sama dengan Pemerintah Kelurahan Mijen, Semarang. Program ini dirancang untuk menghadirkan perpustakaan virtual sebagai alternatif edukatif di tengah keterbatasan fasilitas baca fisik yang tersedia di lingkungan masyarakat.
+	  Kelurahan Mijen dikenal sebagai salah satu wilayah yang aktif dalam kegiatan pertanian dan pengembangan lokal, namun masih minim sarana baca dan fasilitas perpustakaan. Hal ini menjadi dasar utama dibentuknya Pojok Baca Digital sebagai jembatan akses literasi bagi anak-anak, remaja, hingga orang dewasa.
+	  Tujuan utama kami adalah membentuk budaya baca yang kuat dan berkelanjutan. Kami percaya bahwa literasi bukan hanya tentang membaca buku, tetapi juga tentang memahami, berpikir kritis, dan mampu mengambil keputusan yang lebih baik dalam kehidupan sehari-hari.
+	  Dengan semangat kolaboratif, kami berharap Pojok Baca Digital dapat menjadi pusat inspirasi, edukasi, dan transformasi sosial yang positif bagi warga Mijen dan sekitarnya.
+	  Pojok Baca Digital: Literasi untuk Semua, Akses dari Mana Saja.
+    </p>
+    <p>
+      Kami percaya bahwa perpustakaan, meskipun dalam bentuk digital dan sederhana, tetap dapat berperan penting dalam peningkatan literasi gizi masyarakat.
+    </p>
+  </section>
+
+  <section id="books">
+    <h2>Daftar Buku</h2>
+    <div class="container">
+      <!-- Buku 1-10 dari kode asli kamu -->
+      <a class="book-link" href="https://repository.kemkes.go.id/book/1279" target="_blank">
+        <div class="book-card">
+          <img src="https://repository.kemkes.go.id/storage/upload/Book/40212_Book.png" alt="Pahami dan Cegah Stunting" />
+          <div class="book-title">Pahami dan Cegah Stunting</div>
+          <div class="book-author">Kemenkes (2021)</div>
+          <div class="book-desc">Panduan dasar pencegahan stunting.</div>
+          <div class="book-button">Baca Buku</div>
+        </div>
+      </a>
+
+      <a class="book-link" href="https://repository.kemkes.go.id/book/313" target="_blank">
+        <div class="book-card">
+          <img src="https://repository.kemkes.go.id/storage/upload/Book/1665480234_Book.png" alt="Buku Saku Kader Pintar Cegah Stunting" />
+          <div class="book-title">Buku Saku Kader Pintar Cegah Stunting</div>
+          <div class="book-author">Kemenkes (2021)</div>
+          <div class="book-desc">Panduan kader posyandu.</div>
+          <div class="book-button">Baca Buku</div>
+        </div>
+      </a>
+
+      <a class="book-link" href="https://repository.kemkes.go.id/book/336" target="_blank">
+        <div class="book-card">
+          <img src="https://repository.kemkes.go.id/storage/upload/Book/1665478968_Book.png" alt="Cegah Stunting Sebelum Genting" />
+          <div class="book-title">Cegah Stunting Sebelum Genting</div>
+          <div class="book-author">Kemenkes (2021)</div>
+          <div class="book-desc">Peran remaja dalam pencegahan stunting.</div>
+          <div class="book-button">Baca Buku</div>
+        </div>
+      </a>
+
+      <a class="book-link" href="https://repository.kemkes.go.id/book/186" target="_blank">
+        <div class="book-card">
+          <img src="https://repository.kemkes.go.id/storage/upload/Book/1665496349_Book.png" alt="Pedoman Pencegahan Gizi Buruk" />
+          <div class="book-title">Pedoman Pencegahan & Tata Laksana Gizi Buruk</div>
+          <div class="book-author">Kemenkes (2020)</div>
+          <div class="book-desc">Strategi penanganan gizi buruk pada balita.</div>
+          <div class="book-button">Baca Buku</div>
+        </div>
+      </a>
+
+      <a class="book-link" href="https://repository.kemkes.go.id/book/321" target="_blank">
+        <div class="book-card">
+          <img src="https://repository.kemkes.go.id/storage/upload/Book/1665480011_Book.png" alt="Puskesmas & Gizi Buruk" />
+          <div class="book-title">Pencegahan & Tata Laksana Gizi Buruk di Puskesmas</div>
+          <div class="book-author">Kemenkes (2020)</div>
+          <div class="book-desc">Panduan untuk tenaga kesehatan.</div>
+          <div class="book-button">Baca Buku</div>
+        </div>
+      </a>
+
+      <a class="book-link" href="https://repository.kemkes.go.id/book/1163" target="_blank">
+        <div class="book-card">
+          <img src="https://repository.kemkes.go.id/storage/upload/Book/1665480011_Book.png" alt="Tatalaksana Gizi Buruk II" />
+          <div class="book-title">Petunjuk Teknis Tatalaksana Gizi Buruk II</div>
+          <div class="book-author">Kemenkes (2007)</div>
+          <div class="book-desc">Pedoman teknis penanganan gizi buruk.</div>
+          <div class="book-button">Baca Buku</div>
+        </div>
+      </a>
+
+      <a class="book-link" href="https://repository.kemkes.go.id/book/694" target="_blank">
+        <div class="book-card">
+          <img src="https://repository.kemkes.go.id/storage/upload/Book/340104_Book.jpeg" alt="Strategi Komunikasi Stunting" />
+          <div class="book-title">Strategi Komunikasi Perilaku & Pencegahan Stunting</div>
+          <div class="book-author">Kemenkes (2021)</div>
+          <div class="book-desc">Pedoman komunikasi perubahan perilaku.</div>
+          <div class="book-button">Baca Buku</div>
+        </div>
+      </a>
+
+      <a class="book-link" href="https://repository.kemkes.go.id/book/319" target="_blank">
+        <div class="book-card">
+          <img src="https://repository.kemkes.go.id/storage/upload/Book/1665480089_Book.png" alt="PMBA untuk Kader" />
+          <div class="book-title">Pemberian Makan Bayi dan Anak (PMBA) untuk Kader</div>
+          <div class="book-author">Kemenkes (2021)</div>
+          <div class="book-desc">Panduan pemberian makan bayi & anak.</div>
+          <div class="book-button">Baca Buku</div>
+        </div>
+      </a>
+
+      <a class="book-link" href="https://repository.kemkes.go.id/book/269" target="_blank">
+        <div class="book-card">
+          <img src="https://repository.kemkes.go.id/storage/upload/Book/1665482196_Book.png" alt="Asuhan Gizi Puskesmas" />
+          <div class="book-title">Pedoman Asuhan Gizi di Puskesmas</div>
+          <div class="book-author">Kemenkes (2020)</div>
+          <div class="book-desc">Prosedur layanan gizi di puskesmas.</div>
+          <div class="book-button">Baca Buku</div>
+        </div>
+      </a>
+
+      <a class="book-link" href="https://repository.kemkes.go.id/book/607" target="_blank">
+        <div class="book-card">
+          <img src="https://repository.kemkes.go.id/storage/upload/Book/254217_Book.PNG" alt="SPO Gizi Buruk Balita" />
+          <div class="book-title">Standar Prosedur Operasional Gizi Buruk</div>
+          <div class="book-author">Kemenkes (2021)</div>
+          <div class="book-desc">Contoh SOP penanganan gizi buruk.</div>
+          <div class="book-button">Baca Buku</div>
+        </div>
+      </a>
+<!-- Buku 1 – Pengembangan Aneka Produk Olahan Ubikayu -->
+<a class="book-link" href="https://repository.pertanian.go.id/handle/123456789/6584" target="_blank">
+  <div class="book-card">
+    <img src="https://repository.pertanian.go.id/server/api/core/bitstreams/688cdbb5-ff73-401a-983a-90228f1d4663/content" alt="Cover Pengembangan Produk Ubikayu" />
+    <div class="book-title">Pengembangan Aneka Produk Olahan Ubikayu</div>
+    <div class="book-author">BPTP Jawa Barat / Balitbangtan (2016)</div>
+    <div class="book-desc">Diversifikasi produk ubikayu—mocaf, mie, kerupuk, brownies kasava dan lainnya.</div>
+    <div class="book-button">Baca Buku</div>
+  </div>
+</a>
+
+<a class="book-link" href="https://repository.pertanian.go.id/handle/123456789/20177" target="_blank">
+  <div class="book-card">
+    <img src="https://repository.pertanian.go.id/server/api/core/bitstreams/e4046e55-ac23-4f09-84c6-b8fc756e820c/content" alt="Pedoman Budi Daya Ubi Kayu" />
+    <div class="book-title">Pedoman Budi Daya Ubi Kayu di Indonesia</div>
+    <div class="book-author">Kementan / IAARD Press (2016)</div>
+    <div class="book-desc">Panduan lengkap budidaya ubi kayu (singkong) untuk berbagai agroekologi di Indonesia.</div>
+    <div class="book-button">Baca Buku</div>
+  </div>
+</a>
+
+<a class="book-link" href="https://repository.pertanian.go.id/items/4a031c8e-c41c-46b3-9d4b-da509e6101eb" target="_blank">
+  <div class="book-card">
+    <img src="https://repository.pertanian.go.id/server/api/core/bitstreams/8bdaf7b7-2f85-4b2d-8e80-33ac1335a0bc/content" alt="Cover Limbah Kulit Singkong" />
+    <div class="book-title">Formulasi Ransum Berbasis Singkong (Pakan LEISA)</div>
+    <div class="book-author">Pusat Perpustakaan dan Penyebaran Teknologi Pertanian )</div>
+    <div class="book-desc">Pakan merupakan 70% dari komponen bisnis peternakan.</div>
+	<div class="book-button">Baca Buku</div>
+  </div>
+</a>
+
+<a class="book-link" href="https://repository.pertanian.go.id/items/3eb81a10-d62b-4b9c-97c1-f91784e5d40e" target="_blank">
+  <div class="book-card">
+    <img src="https://repository.pertanian.go.id/server/api/core/bitstreams/b02b3239-8b99-425c-bb66-d246bc85c28e/content" alt="Cover Optimasi Produksi" />
+    <div class="book-title">Pemanfaatan Rumput Laut Dalam Memperbaiki Sifat Fisika-Kimia Beras Analog Berbahan Baku Singkong</div>
+    <div class="book-author"> Loupatty, Voulda Hadinoto, Sugeng </div>
+    <div class="book-desc"> Formulasi singkong dan rumput laut adalah  A= Singkong, terdiri dari A1= Singkong segar dan A2= Tepung Singkong. </div>
+    <div class="book-button">Baca Buku</div>
+  </div>
+</a>
+
+<a class="book-link" href="https://repository.pertanian.go.id/items/4a031c8e-c41c-46b3-9d4b-da509e6101eb" target="_blank">
+  <div class="book-card">
+    <img src="https://repository.pertanian.go.id/server/api/core/bitstreams/c05636a3-7c5a-4268-92ba-aeaaf4597d34/content" alt="Cover Pengolahan Hasil Pertanian" />
+    <div class="book-title">Enbal Sebagai Pangan Spesifik Lokal Menunjang Pendapatan Dan Ketahanan Pangan Rumah Tangga</div>
+    <div class="book-author"> Polnaya, Febby J, Breemer, Rachel, Timisela, Natelda R, Leatemia, Ester D </div>
+    <div class="book-desc"> Proses pembuatan enbal sangat sederhana. Ubi kayu dengan kadar HCN tinggi dipanen, dikupas, dicuci, diparut, dibungkus dengan karung plastik, diperas selama ± 4-5 jam. </div>
+    <div class="book-button">Baca Buku</div>
+  </div>
+</a>
+
+    </div>
+  </section>
+  
+  <footer>
+    &copy; 2025 Pojok Baca Gizi Sehat - Dibuat untuk Edukasi Masyarakat
+  </footer>
+</body>
+</html>
